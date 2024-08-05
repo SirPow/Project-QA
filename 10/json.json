@@ -1,0 +1,66 @@
+{
+  "catalog": {
+    "persoane": [
+      {
+        "id": "persoana1",
+        "nume": "Ion Popescu",
+        "oras": "București",
+        "adresa": {
+          "strada": "Strada principala1",
+          "casa": "casa1",
+          "numarapartament": "apartament1"
+        },
+        "contact": {
+          "telefon": "0722222222",
+          "email": "ion.popescu@gmail.com",
+          "skype": "ion.popescu"
+        }
+      },
+      {
+        "id": "persoana2",
+        "nume": "Maria Ionescu",
+        "oras": "Cluj-Napoca",
+        "adresa": {
+          "strada": "Strada Principala2",
+          "casa": "casa2",
+          "numarapartament": "apartament2"
+        },
+        "contact": {
+          "telefon": "0733333333",
+          "email": "maria.ionescu@gmail.com",
+          "skype": "maria.ionescu"
+        }
+      },
+      {
+        "id": "persoana3",
+        "nume": "George Vasilescu",
+        "oras": "Iași",
+        "adresa": {
+          "strada": "Strada principala3",
+          "casa": "casa3",
+          "numarapartament": "apartament3"
+        },
+        "contact": {
+          "telefon": "0744444444",
+          "email": "george.vasilescu@gmail.com",
+          "skype": "george.vasilescu"
+        }
+      },
+      {
+        "id": "persoana4",
+        "nume": "Elena Marinescu",
+        "oras": "Timișoara",
+        "adresa": {
+          "strada": "Strada Principala4",
+          "casa": "casa4",
+          "numarapartament": "apartament4"
+        },
+        "contact": {
+          "telefon": "0755555555",
+          "email": "elena.marinescu@gmail.com",
+          "skype": "elena.marinescu"
+        }
+      }
+    ]
+  }
+}

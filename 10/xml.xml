@@ -1,0 +1,56 @@
+<catalog>
+	<persoane>
+		<id>persoana1</id>
+		<nume>Ion Popescu</nume>
+		<oras>Bucuresti</oras>
+		<adresa>
+			<strada>Strada principala1</strada>
+			<casa>casa1</casa>
+			<numarapartament>apartament1</numarapartament>
+		</adresa>
+		<contact>
+			<telefon>0722222222</telefon>
+			<email>ion.popescu@gmail.com</email>
+			<skype>ion.popescu</skype>
+		</contact>
+		<id>persoana2</id>
+		<nume>Maria Ionescu</nume>
+		<oras>Cluj-Napoca</oras>
+		<adresa>
+			<strada>Strada principala2</strada>
+			<casa>casa2</casa>
+			<numarapartament>apartament2</numarapartament>
+		</adresa>
+		<contact>
+			<telefon>0733333333</telefon>
+			<email>maria.ionescu@gmail.com</email>
+			<skype>maria.ionescu</skype>
+		</contact>
+		<id>persoana3</id>
+		<nume>George Vasilescu</nume>
+		<oras>Iasi</oras>
+		<adresa>
+			<strada>Strada principala3</strada>
+			<casa>casa3</casa>
+			<numarapartament>apartament3</numarapartament>
+		</adresa>
+		<contact>
+			<telefon>0744444444</telefon>
+			<email>george.vasilescu@gmail.com</email>
+			<skype>george.vasilescu</skype>
+		</contact>
+		<id>persoana4</id>
+		<nume>Elena Marinescu</nume>
+		<oras>Timisoara</oras>
+		<adresa>
+			<strada>Strada principala4</strada>
+			<casa>casa4</casa>
+			<numarapartament>apartament4</numarapartament>
+		</adresa>
+		<contact>
+			<telefon>0755555555</telefon>
+			<email>elena.marinescu@gmail.com</email>
+			<skype>elena.marinescu</skype>
+		</contact>
+	</persoane>
+</catalog>

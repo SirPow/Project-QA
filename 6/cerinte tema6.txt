@@ -1,0 +1,27 @@
+1. Sistemul calculează impozitele în funcție de salariu
+Angajații cu salariu până la 4000 $ inclusiv nu plătesc impozit.
+Următorii $1.500 sunt impozitați cu 10%.
+Următorii $28.000 sunt impozitați cu 22%.
+Toate sumele ulterioare sunt impozitate cu 40%.
+Ce grup de valori aparține unei singure clase de echivalență (equivalence class)?
+
+а) $4.800, $14.000, $28.000
+b) $5.200, $5.500, $28.000
+c) $28.001, $32.000, $35.000
+d) $5.800, $28.000, $32.000
+
+2. Calcularea bonusurilor în funcție de vechimea angajatului
+Bonusurile se calculează în funcție de termenul companiei.
+Categorii: perioada de muncă mai mică sau egală cu 2 ani (0 bonus); mai mult de 2 ani, dar mai puțin de 5 ani (1000 lei bonus); de la 5 ani și mai mult, dar mai puțin de 10 ani (1500 lei bonus); 10 ani și mai mult (2000 lei bonus).
+Care este numărul de cazuri de testare necesare pentru a acoperi toate clasele de echivalență?
+
+3. Testează un software de notare a temelor
+În funcție de numărul de puncte obținute, notele pot fi:
+
+1-49=C,
+50-74=B,
+75-100=A,
+Care sunt valorile necesare pentru a atinge nivelul de acoperire folosind tehnica analizei valorilor limită (boundary value analysis)?
+
+4. Creează Test cases bazate pe tehnicile învățate
+Pe baza rezolvării exercițiului 3, creează test case-urile necesare pentru a testa software-ul de notare a temelor.
