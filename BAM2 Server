@@ -1,10 +1,10 @@
-#  Metin2 Private Server – QA, Gameplay & Sistem Backend
+Metin2 Private Server – Gameplay & Sistem Backend
 
 ## Descriere proiect
 
 Acest proiect reprezintă dezvoltarea și stabilizarea unui server privat de Metin2, pornind de la o bază instabilă, plină de buguri și probleme de gameplay.
 
-Proiectul a fost realizat pe parcursul a peste 1 an, în timpul liber, din pasiune, în colaborare cu încă un dezvoltator.
+Proiectul a fost realizat pe parcursul a peste 1 an, în timpul liber, din pasiune, în colaborare cu încă un coleg.
 
 Scopul principal a fost:
 - stabilizarea serverului
@@ -18,7 +18,7 @@ Scopul principal a fost:
 
 ##  Rolul meu în proiect
 
-Deși nu sunt programator de bază ca specializare (QA Engineer), am avut un rol mixt:
+Deși nu sunt programator de bază ca specializare, am avut un rol mixt:
 
 - Debugging și rezolvare buguri (server + client)
 - Implementare și modificare sisteme de gameplay
@@ -155,65 +155,67 @@ quest event_ring begin
     end
 end
 
-🌐 Website
-Am pornit de la o temă existentă
+    Website
+
+ Am pornit de la o temă existentă
+
 Am personalizat:
-HTML
-CSS
-PHP
-Integrare cu baza de date
-🔐 Securitate
-Criptare fișiere client (Epack)
-Implementare protecții IP
-Gestionare acces server
-🧪 QA & Testing
-Testare manuală gameplay
-Reproducere buguri
-Testare regresie după update-uri
-Validare funcțională pentru fiecare sistem implementat
-📸 Screenshots
-🗺️ Gameplay
+- HTML
+- CSS
+- PHP
 
+ Integrare cu baza de date
+- Securitate
+- Criptare fișiere client (Epack)
+- Implementare protecții IP
+- Gestionare acces server
+ QA & Testing
+- Testare manuală gameplay
+- Reproducere buguri
+- Testare regresie după update-uri
+- Validare funcțională pentru fiecare sistem implementat
 
-🌐 Website
+    Screenshots
+ Gameplay
 
+![image](https://github.com/SirPow/Project-QA/blob/6721e5007bb5bbbce9d88bf40c6a36b81ac7ea9b/1.png)
+![image](https://github.com/SirPow/Project-QA/blob/6721e5007bb5bbbce9d88bf40c6a36b81ac7ea9b/2.png)
 
+ Website
 
-📊 Impact
-Server live cu jucători activi
-Stabilitate îmbunătățită semnificativ
-Gameplay echilibrat și funcțional
-🤝 Colaborare
+![image](https://github.com/SirPow/Project-QA/blob/6721e5007bb5bbbce9d88bf40c6a36b81ac7ea9b/3.png)
 
-Proiect realizat în colaborare cu încă un dezvoltator, lucrând constant împreună pentru:
+ Impact
+- Server live cu jucători activi
+- Stabilitate îmbunătățită semnificativ
+- Gameplay echilibrat și funcțional
 
-rezolvarea problemelor
-implementarea sistemelor
-testare și îmbunătățire continuă
-📚 Ce am învățat
-Lucrul cu cod legacy
-Debugging avansat
-Gândire orientată pe QA
-Adaptare rapidă la tehnologii noi
-Lucru cu sisteme complexe (client-server)
-⚠️ Mențiune
+    Colaborare
 
+Proiect realizat în colaborare cu încă un coleg, lucrând constant împreună.
+
+    Ce am învățat
+- Lucrul cu cod legacy
+- Debugging avansat
+- Gândire orientată pe QA
+- Adaptare rapidă la tehnologii noi
+- Lucru cu sisteme complexe (client-server)
+
+    Mențiune
 Acest proiect nu reprezintă un produs dezvoltat complet de la zero.
-
 Am lucrat pe o bază existentă, pe care:
-
-am stabilizat-o
-am îmbunătățit-o
-am extins-o
+- am stabilizat-o
+- am îmbunătățit-o
+- am extins-o
 
 Folosind multiple tool-uri, documentație și inclusiv soluții moderne (AI), am reușit să înțeleg și să adaptez sistemul.
 
-🚀 Concluzie
+    Concluzie
 
 Acest proiect reflectă:
 
-capacitatea mea de învățare rapidă
-adaptabilitate
-abilități de debugging și QA
-implicare pe termen lung într-un proiect real
+- capacitatea mea de învățare rapidă
+- adaptabilitate
+- abilități de debugging și QA
+- implicare pe termen lung într-un proiect real
 
