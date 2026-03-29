@@ -1,0 +1,221 @@
+#  Metin2 Private Server – QA, Gameplay & Sistem Backend
+
+## Descriere proiect
+
+Acest proiect reprezintă dezvoltarea și stabilizarea unui server privat de Metin2, pornind de la o bază instabilă, plină de buguri și probleme de gameplay.
+
+Proiectul a fost realizat pe parcursul a peste 1 an, în timpul liber, din pasiune, în colaborare cu încă un dezvoltator.
+
+Scopul principal a fost:
+- stabilizarea serverului
+- îmbunătățirea gameplay-ului
+- crearea de conținut nou
+- oferirea unei experiențe funcționale pentru jucători
+
+În prezent, serverul este **live și are jucători activi**.
+
+---
+
+##  Rolul meu în proiect
+
+Deși nu sunt programator de bază ca specializare (QA Engineer), am avut un rol mixt:
+
+- Debugging și rezolvare buguri (server + client)
+- Implementare și modificare sisteme de gameplay
+- Creare quest-uri și evenimente
+- Testare funcțională și regresie
+- Sincronizare server-client
+- Modificări UI și website
+
+Am lucrat constant cu cod existent (legacy code), pe care l-am înțeles, adaptat și îmbunătățit.
+
+---
+
+## Tehnologii și tool-uri utilizate
+
+### Limbaje:
+- C++
+- Python
+- PHP
+- HTML / CSS
+- SQL (MySQL)
+
+### Tool-uri:
+- Navicat (bază de date)
+- PuTTY (server management)
+- WinSCP / FileZilla (transfer fișiere)
+- Visual Studio Code
+- Notepad++
+- Granny Viewer (modele 3D)
+- Paint.NET / Photoshop (texturi)
+- UltraVNC (remote control)
+- Epack (criptare/decriptare fișiere)
+
+---
+
+## Contribuții principale
+
+### Debugging & Stabilitate
+- Identificarea și rezolvarea a numeroase buguri critice
+- Fix-uri pentru crash-uri server-side
+- Corectarea problemelor de sincronizare server-client
+- Eliminarea bugurilor vizuale și logice
+
+---
+
+### Gameplay & Sisteme
+- Rebalansarea mecanicilor de joc
+- Modificarea sistemelor existente (drop, combat, progresie)
+- Integrarea și adaptarea de sisteme noi
+
+---
+
+### Conținut nou
+- Integrarea și adaptarea de hărți existente
+- Sincronizarea monștrilor (mob sync)
+- Creare iteme noi
+- Costume și frizuri personalizate (editare texturi DDS)
+
+---
+
+### Sistem de quest-uri
+
+Am creat peste **50+ quest-uri personalizate**, cu logică proprie.
+
+#### Exemplu quest:
+```cpp
+quest lv6 begin
+    state start begin
+        when login or levelup with pc.level >= 6 and pc.level <= 250 begin
+            set_state(information)
+        end
+    end
+
+    state information begin
+        when letter begin
+            send_letter("Operatiunea: Lupii Alpha")
+        end
+
+        when info or button begin
+            say_title("Misiunea de nivel 6")
+            say("Ei bine, razboinicule, ai crescut un pic.")
+            say("Avem o problema: Lupi Alpha agresivi.")
+            say_reward("Obiectiv: Ucide 10 Lupi Alpha.")
+
+            if pc.getqf("state") == 0 then
+                pc.setqf("state", 10)
+            end
+
+            q.set_counter("Lupi Alpha doborati", pc.getqf("state"))
+        end
+
+        when 103.kill begin
+            local count = pc.getqf("state") - 1
+            if count >= 0 then
+                pc.setqf("state", count)
+                q.set_counter("Lupi Alpha doborati", count)
+            end
+
+            if count == 0 then
+                say("Misiune completa!")
+                pc.give_item2(27110, 10)
+                pc.give_item2(27113, 10)
+
+                clear_letter()
+                set_state(__COMPLETE__)
+            end
+        end
+    end
+end
+
+Sistem de evenimente (admin control)
+
+Am implementat un sistem prin care administratorii pot controla evenimentele direct din joc:
+
+quest event_ring begin
+    state start begin
+        when 40002.use begin
+            if not pc.is_gm() then
+                say("Nu ai permisiunea.")
+                return
+            end
+
+            local s = select(
+                "Eveniment Pescuit",
+                "Eveniment Minerit",
+                "World Boss",
+                "Inchide"
+            )
+
+            if s == 1 then
+                game.set_event_flag("fishing_event", 1)
+                notice_all("Evenimentul de pescuit a fost pornit!")
+            end
+        end
+    end
+end
+
+🌐 Website
+Am pornit de la o temă existentă
+Am personalizat:
+HTML
+CSS
+PHP
+Integrare cu baza de date
+🔐 Securitate
+Criptare fișiere client (Epack)
+Implementare protecții IP
+Gestionare acces server
+🧪 QA & Testing
+Testare manuală gameplay
+Reproducere buguri
+Testare regresie după update-uri
+Validare funcțională pentru fiecare sistem implementat
+📸 Screenshots
+🗺️ Gameplay
+
+![Image alt](https://github.com/SirPow/Project-QA/blob/a33bc66417c38dc365990dbc991219894c8a7267/2026-03-29_15h51_50.png)
+![Image alt](https://github.com/SirPow/Project-QA/blob/a33bc66417c38dc365990dbc991219894c8a7267/2026-03-08_22h03_11.png)
+
+🌐 Website
+
+![Image alt](https://github.com/SirPow/Project-QA/blob/a33bc66417c38dc365990dbc991219894c8a7267/2026-03-29_15h59_45.png)
+
+📊 Impact
+Server live cu jucători activi
+Stabilitate îmbunătățită semnificativ
+Gameplay echilibrat și funcțional
+🤝 Colaborare
+
+Proiect realizat în colaborare cu încă un dezvoltator, lucrând constant împreună pentru:
+
+rezolvarea problemelor
+implementarea sistemelor
+testare și îmbunătățire continuă
+📚 Ce am învățat
+Lucrul cu cod legacy
+Debugging avansat
+Gândire orientată pe QA
+Adaptare rapidă la tehnologii noi
+Lucru cu sisteme complexe (client-server)
+⚠️ Mențiune
+
+Acest proiect nu reprezintă un produs dezvoltat complet de la zero.
+
+Am lucrat pe o bază existentă, pe care:
+
+am stabilizat-o
+am îmbunătățit-o
+am extins-o
+
+Folosind multiple tool-uri, documentație și inclusiv soluții moderne (AI), am reușit să înțeleg și să adaptez sistemul.
+
+🚀 Concluzie
+
+Acest proiect reflectă:
+
+capacitatea mea de învățare rapidă
+adaptabilitate
+abilități de debugging și QA
+implicare pe termen lung într-un proiect real
+
