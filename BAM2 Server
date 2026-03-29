@@ -169,7 +169,9 @@ Am personalizat:
 - Criptare fișiere client (Epack)
 - Implementare protecții IP
 - Gestionare acces server
+
  QA & Testing
+
 - Testare manuală gameplay
 - Reproducere buguri
 - Testare regresie după update-uri
